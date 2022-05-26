@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;   
+    /* this property will make size fixed
+    https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+    */
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-cont{
+    height: 5rem;
+    background-color: #2C3A47;
+    display: flex;
+    align-items: center;
+}
+.toolbox-cont>*{
+    margin-left:4rem;
+    border-radius: 3px;
+}
+
+.toolbox-priority-cont{
+    height: 3.5rem;
+    width: 18rem;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.action-btn-cont{
+    height: 3.5rem;
+    width: 7rem;
+    background-color: #dcdde1;
+    display: flex;
+    
+}
+.action-btn-cont>*{
+    display: flex;
+
+    font-size:2.5rem;
+    align-items:center;
+    justify-content:center;
+    width: 50%;
+    /* color:#d1d8e0 ; */
+}
+/* .toolbox-priority-cont>*{
+    margin-left: 1rem;
+} */
+.color{
+    height:1.5rem;
+    width: 3rem;
+}
+.red{
+       background-color: red;
+}
+
+.green{
+      background-color: green;
+}
+.yellow{
+     background-color: yellow;
+}
+.black{
+    background-color: black;
+}
+
+.action-btn-cont>*:hover{
+    background-color: grey;
+}
+
+/* .toolbox-priority-cont>*:hover{
+    background-color: lightcoral ;
+} */
+
+.modal-cont{
+    height: 50vh;
+    width: 45vw;
+    background-color: lightcoral;
+    position: absolute;
+    top: calc((100vh - 50vh) / 2);
+    /* subtraction is done as calc method adds height ..... */
+    /* here spaces in operator and operand are important  */
+    left: calc((100vw - 45vw) / 2);
+    display: none;
+}
+
+.textarea-cont{
+    height: 100%;
+    /* takes 100% height of parent  */
+    width: 75%;
+    outline: none;
+    /* border is not darken when we type  */
+    border: none;
+    /* removed border  */
+    background-color: lightblue;
+    resize: none;
+    padding: 2rem;
+    font-size: 2rem;
+    
+}
+
+.priority-colors-cont{
+    height: 100%;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+
+.priority-color{
+    height: 3rem;
+    width: 5rem;
+    
+}
+
+.active{
+    border: 5px solid white;
+}
+
+.main-cont{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    padding: 2rem;
+   
+ }
+ 
+ 
+ .ticket-cont{
+   height: 12rem;
+   width: 15rem;
+   background-color: #f1f2f6;
+   
+ }
+ 
+ 
+ .ticket-color{
+   height: 1rem;
+ }
+ 
+ 
+ .ticket-id{
+   height:2rem ;
+   background-color: greenyellow
+ }
+ 
+ 
+ .task-area{
+   height: calc(100%  -1rem - 2rem);
+   font-size: 1.5rem;
+   padding:5px;
+   outline : none
+ }
+
+
+ 
+ .ticket-lock{  
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    font-size: 1.5rem;
+    margin-right: 5px;
+ }
+ 
+ 
+ 
+ 
+ 
+
